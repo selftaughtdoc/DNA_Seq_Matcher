@@ -1,7 +1,7 @@
 from abifpy import Trace
 
 # Path to your .ab1 file
-ab1_file_path = "/Users/srikannan/Desktop/2.1.ab1"
+ab1_file_path = "/Users/username/Desktop/filename.ab1"
 
 # Read the .ab1 file
 trace = Trace(ab1_file_path)
