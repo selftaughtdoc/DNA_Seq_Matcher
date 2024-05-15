@@ -1,0 +1,19 @@
+from abifpy import Trace
+
+# Path to your .ab1 file
+ab1_file_path = "/Users/srikannan/Desktop/2.1.ab1"
+
+# Read the .ab1 file
+trace = Trace(ab1_file_path)
+
+# Access trace data
+sequence = trace.seq
+
+# Define the matching sequence to search for
+matching_sequence = "CACCGCCCTACCCCTCTTTAGCTGG"
+
+# Search for the matching sequence
+if matching_sequence in sequence:
+    print("Matching sequence found.")
+else:
+    print("Matching sequence not found.")
